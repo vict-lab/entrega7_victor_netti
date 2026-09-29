@@ -1,0 +1,13 @@
+@use "../utilities/variables" as *;
+
+.custom-toggler {
+    border-color: $color-white-60;
+
+    &:focus-visible {
+        box-shadow: 0 0 0 0.2rem $color-white-35;
+    }
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}

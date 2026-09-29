@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+.site-header {
+    background-color: $color-brand-primary;
+    color: $color-white;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    border-radius: $radius-standard;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    box-shadow: 0 8px 24px $color-shadow-brand;
+
+}
+
+.brand-link,
+.site-title {
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

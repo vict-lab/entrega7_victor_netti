@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+
+.site-footer {
+    background-color: $color-blue;
+    color: $color-white;
+    padding: 2rem 1.5rem;
+    border-radius: $radius-standard;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    box-shadow: 0 10px 25px $color-shadow-blue;
+
+}
+
+.footer-list {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.footer-title {
+    margin-bottom: 0.8rem;
+    color: $color-white;
+}
+
+.footer-item {
+    margin-bottom: 0.4rem;
+}
+
+.footer-link {
+    color: $color-link-light;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: $color-accent-light;
+    }
+}

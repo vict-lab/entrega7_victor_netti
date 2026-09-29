@@ -1,0 +1,30 @@
+@use "../utilities/mixins" as mixins;
+
+@include mixins.desktop {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 2rem;
+    }
+
+    .nav-list {
+        justify-content: flex-end;
+    }
+
+    .page-main {
+        grid-template-areas:
+            "featured featured"
+            "comments comments";
+    }
+
+    .products-grid,
+    .clients-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .site-footer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+    }
+}

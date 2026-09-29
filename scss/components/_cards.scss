@@ -1,0 +1,116 @@
+@use "../utilities/variables" as *;
+
+.custom-carousel {
+    height: 420px;
+    border-radius: $radius-carousel;
+    overflow: hidden;
+    box-shadow: 0 12px 24px $color-shadow-brand-soft;
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color-brand-70;
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+.content-section {
+    margin-bottom: 0;
+    padding: 1.5rem 1.25rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-section;
+    background-color: $color-white;
+    box-shadow: 0 10px 30px $color-shadow-text;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "content";
+    gap: 1rem;
+}
+
+.section-featured {
+    grid-area: featured;
+}
+
+.section-comments {
+    grid-area: comments;
+}
+
+.section-title {
+    grid-area: title;
+    color: $color-indigo-dark;
+    font-size: clamp(1.5rem, 2vw, 2.1rem);
+    font-weight: 700;
+}
+
+.products-grid,
+.clients-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-area: content;
+}
+
+.product-card,
+.client-card {
+    background-color: $color-white;
+    border: 1px solid $color-card-border;
+    border-radius: $radius-card;
+    padding: 1.25rem;
+    min-width: 0;
+    box-shadow: 0 8px 18px $color-shadow-brand-faint;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 22px $color-shadow-brand-soft;
+    }
+}
+
+.product-figure {
+    margin: 0 0 0.8rem;
+}
+
+.product-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: $radius-image;
+}
+
+.product-price,
+.product-description,
+.feature-text {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: $color-text-secondary;
+}
+
+.product-price {
+    color: $color-indigo-dark;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card-author {
+    margin-top: 0.5rem;
+    color: $color-brand-secondary;
+    font-weight: 700;
+}

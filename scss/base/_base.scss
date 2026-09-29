@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.site-header,
+.page-main,
+.site-footer {
+    width: $layout-width;
+    margin: 0 auto;
+}
+
+.page-main {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-areas:
+        "featured"
+        "comments";
+    gap: 1.5rem;
+
+}
+
+.section-carousel {
+    grid-area: auto;
+}
